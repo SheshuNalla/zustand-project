@@ -15,7 +15,7 @@ const courseStore = (set) =>({
     },
     toggleCourseStatus : (courseId) => {
         set((state) => ({
-            courses : state.courses.map((c) => c.id === courseId ? {...courses, completed : !c.completed} : c )
+            courses : state.courses.map((course) => course.id === courseId ? {...courses, completed : !course.completed} : course )
         }))
     }
 })

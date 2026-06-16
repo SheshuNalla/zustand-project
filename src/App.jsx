@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import CourseForm from './components/courseForm'
+import CourseList from './components/CourseList'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         fontSize : "2.5rem"
         }}>My Course List</h1>
         <CourseForm/>
+        <CourseList/>
     </div>
   )
 }
