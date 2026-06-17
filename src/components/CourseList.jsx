@@ -17,7 +17,7 @@ const CourseList = () => {
                         <li
                         className={`course-item`}
                         style={{
-                            backgroundColor: course.completed ? "#f4f4" : "white"
+                            backgroundColor: course.completed ? "rgba(90, 86, 90, 0.27)" : "white",
                         }}
                         >
                             <span className="course-item-col-1">
@@ -29,8 +29,8 @@ const CourseList = () => {
                                 }}
                                 />
                             </span>
-                            <span>
-                                {course?.title}
+                            <span style={{color : "black"}}>
+                                {course.title}
                             </span>
                             <button 
                             onClick={() => {
